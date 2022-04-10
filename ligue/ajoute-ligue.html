@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/ligue.css">
+	<meta charset="utf-8">
+	<title>Ajouter une ligue</title>
+</head>
+<body>
+	<nav>
+		<a href="../index.php">Accueil</a>
+		<a href="ligue.php">Ligue</a>
+		<a href="../prestation/prestation.php">Prestation</a>
+		<a href="../facture/facture.php">Facture</a>
+		<div class="animation ligue"></div>
+	</nav>
+	<div id="tab">
+		<h1>Ajouter une ligue</h1>
+		<!--Formulaire pour ajouter une nouvelle ligue dans la BDD-->
+		<form id="creation-ligue" name="creation-ligue" method="POST" action="creation-ligue.php">
+			<table class="autre">
+				<tr>
+					<td>Nom Ligue</td>
+					<td>
+						<input type="text" id="NomLigue" name="NomLigue" />
+					</td>
+				</tr>
+				<tr>
+					<td>Adresse</td>
+					<td>
+						<input type="text" id="adresse" name="adresse" />
+					</td>
+				</tr>
+				<tr>
+					<td>Ville</td>
+					<td>
+						<input type="text" id="ville" name="ville" />
+					</td>
+				</tr>
+				<tr>
+					<td>Code Postal</td>
+					<td>
+						<input type="text" id="cp" name="cp" />
+					</td>
+				</tr>
+				<tr>
+					<td>Sport</td>
+					<td>
+						<input type="text" id="sport" name="sport" />
+					</td>
+				</tr>
+				<tr>
+					<td>Nom du tresorier</td>
+					<td>
+						<input type="text" id="Tresorier" name="Tresorier" />
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<input id="modifier" type="submit" value="Inscrire la ligue" />
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>

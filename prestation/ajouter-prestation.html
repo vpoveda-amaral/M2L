@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/prestation.css">
+	<title>Ajouter une prestation</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<nav>
+		<a href="../index.php">Accueil</a>
+		<a href="../ligue/ligue.php">Ligue</a>
+		<a href="prestation.php">Prestation</a>
+		<a href="../facture/facture.php">Facture</a>
+		<div class="animation prestation"></div>
+	</nav>
+	<div id="tab">
+		<h1>Ajouter prestation</h1>
+		<form id="creation-prestation" name="creation-prestation" method="POST" action="creation-prestation.php">
+			<table class="autre">
+				<tr>
+					<td>Référence</td>
+					<td>
+						<input type="text" id="reference" name="reference" />
+					</td>
+				</tr>
+				<tr>
+					<td>Designation</td>
+					<td>
+						<input type="text" id="designation" name="designation" />
+					</td>
+				</tr>
+				<tr>
+					<td>PU HT</td>
+					<td>
+						<input type="number" id="puht" name="puht" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input id="modifier" type="submit" value="Envoyer le formulaire" />
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>

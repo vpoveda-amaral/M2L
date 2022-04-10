@@ -1,0 +1,146 @@
+nav {
+  margin: 27px auto 0;
+
+  position: relative;
+  width: 560px;
+  height: 50px;
+  background-color: #34495e;
+  border-radius: 8px;
+  font-size: 0;
+}
+nav a {
+  line-height: 50px;
+  height: 100%;
+  font-size: 15px;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+nav .animation {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+  transition: all .5s ease 0s;
+  border-radius: 8px;
+}
+a:nth-child(1) {
+  width: 140px;
+}
+a:nth-child(2) {
+  width: 140px;
+}
+a:nth-child(3) {
+  width: 140px;
+}
+a:nth-child(4) {
+  width: 140px;
+}
+nav .accueil, a:nth-child(1):hover~.animation {
+  width: 140px;
+  left: 0;
+  background-color: #1abc9c;
+}
+nav .ligue, a:nth-child(2):hover~.animation {
+  width: 140px;
+  left: 140px;
+  background-color: #e74c3c;
+}
+nav .prestation, a:nth-child(3):hover~.animation {
+  width: 140px;
+  left: 280px;
+  background-color: #3498db;
+}
+nav .facture a:nth-child(4):hover~.animation {
+  width: 140px;
+  left: 420px;
+  background-color: #9b59b6;
+}
+
+body {
+  font-size: 12px;
+  font-family: sans-serif;
+  background: #2c3e50;
+}
+h1{
+  text-align: center;
+  color: white;
+}
+/*Table pour afficher la liste*/
+div#tab .aff2{
+  background-color: #C36C6C;
+  width: 70%;
+  color: white;
+  position: relative;left: 15%; 
+  border: 1px solid #2c3e50;
+  
+}
+div#tab .aff2 td{
+  width: 11%;
+  height: 55px;
+  font-size: 14px;
+}
+
+div#tab h1{
+  color: white;
+}
+div#tab {
+  width: 100%;
+  position: relative;top: 50px;
+  text-align: center;
+}
+div#tab .aff{
+  background-color: #34495e;
+  width: 70%;
+  color: white;
+  position: relative;left: 15%; 
+  border: 1px solid #2c3e50;
+  
+}
+div#tab .aff td{
+  width: 11%;
+  height: 55px;
+  font-size: 14px;
+}
+div#tab .aff td a{
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  background-color: white;
+  display: inline-block;
+  line-height: 55px;
+  border-radius: 5px;
+
+}
+/*Table pour afficher les formulaire d'ajout ou de modification*/
+
+div#tab .autre{
+  background-color: #34495e;
+  width: 40%;
+  color: white;
+  text-align: right;
+  position: relative;left: 30%; 
+  border: 1px solid white;
+  border-radius: 15px;
+  
+}
+div#tab .autre td{
+  height: 35px;
+  width: 40%;
+  font-size: 14px;
+  boder: 1px solid white;
+}
+div#tab .autre #modifier{
+  color: black;
+  width: 100%;
+  background-color: white;
+  display: inline-block;
+  line-height: 25px;
+  border:none;
+  border-radius: 15px;
+}
